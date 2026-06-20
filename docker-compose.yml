@@ -18,7 +18,7 @@ services:
   # ============================================================
   mysql:
     image: mysql:8.0
-    container_name: cloudcart-mysql
+    container_name: cloudcart1-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
