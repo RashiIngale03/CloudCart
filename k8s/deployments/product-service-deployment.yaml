@@ -11,6 +11,7 @@ metadata:
     # Track deployment metadata
     deployment.kubernetes.io/revision: "1"
 spec:
+  
   replicas: 2
   
   # Selector: which Pods does this Deployment manage?
@@ -35,6 +36,7 @@ spec:
         app: product-service
         version: "1.0"
     spec:
+      serviceAccountName: cloudcart-app
       # Security context at Pod level
       # Prevents privilege escalation for all containers in this Pod
       securityContext:
