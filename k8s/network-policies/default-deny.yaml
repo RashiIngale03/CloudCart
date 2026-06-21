@@ -1,4 +1,4 @@
- Deny ALL ingress and egress traffic by default
+# Deny ALL ingress and egress traffic by default
 # Then we explicitly allow what we need
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
