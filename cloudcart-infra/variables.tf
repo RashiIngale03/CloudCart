@@ -78,3 +78,8 @@ variable "db_multi_az" {
   description = "Whether RDS runs Multi-AZ (extra cost, real HA). false for learning, true for real production"
   type        = bool
 }
+variable "aws_profile"{
+  description = "AWS CLL profile to use for authentication . If not set ,the default profile is used"
+  type        =  string
+
+}
